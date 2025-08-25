@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>grid practice</title>
+  </head> 
+       <style>
+
+        .grid{
+          column-gap: 20px;
+          row-gap: 10px;
+          display: grid;
+           grid-template-columns: 1fr 1fr 1fr 1fr;
+           margin-bottom: 50px;
+        }
+
+        .lightpink{
+          background-color: lightpink;
+        }
+
+      .profile{
+        width: 200px;
+        box-shadow: 0 0 5px rgb(0, 0, 0);
+        vertical-align: top;
+        margin-right: 15px;
+      }  
+
+      .profile-pic{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin-bottom: 12px;
+      }
+
+      .name{
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 8px;
+        margin-bottom: 5px;
+      }
+
+      .mutual-friends-row{
+        display: grid;
+        grid-template-columns: 35px 1fr;
+        margin-left: 8px;
+        align-items: center;
+        margin-left: 8px;
+        margin-bottom: 10px;
+      }
+
+      .mutual-friend-picture{
+        height: 28px;
+        width: 28px;
+        object-fit: cover;
+        border-radius:14px;
+        vertical-align: middle;
+        margin-right: 4px;
+      }
+        .mutual-friends{
+         color: rgb(100, 119, 242);
+      }
+
+      .add-friend-button{
+       background-color:rgb(24, 119, 242) ;
+       color: white;
+       border: none;
+       padding-top: 10px;
+       padding-bottom: 10px;
+       padding-left: 20px;
+       padding-right: 20px;
+       border-radius: 4px;
+       font-size: 16px;
+       margin-left: 8px;
+       margin-bottom: 10px;
+
+      }
+
+      .
+
+       </style>
+  </heas>
+  <body>
+    <div class="grid">
+      <div class="lightpink">col1</div>
+      <div class="lightpink">col2</div>
+      <div class="lightpink">col3</div>
+      <div class="lightpink">col4</div>
+      <div class="lightpink">col1</div>
+      <div class="lightpink">col2</div>
+      <div class="lightpink">col3</div>
+      <div class="lightpink">col4</div>
+    </div>
+    
+  </div>
+
+<div class="grid">
+  <div class="profile">
+
+    <img class="profile-pic" src="thumbnails/thumbnail-1.webp">
+    <p class="name">oliver</p>
+
+    <div class="mutual-friends-row">
+    <img class="mutual-friend-picture" src="channel-pictures/channel-2.jpeg">
+    <p class="mutual-friends"> 2 mutual friends</p>
+
+    </div>
+    <button class=" add-friend-button">Add Friend</button>
+</div>
+
+
+</div>
+
+  </body>
+</html>

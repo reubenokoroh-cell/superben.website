@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PRACTICE</title>
+  </head>
+
+  <body>
+    <input placeholder="Name" class="js-name-input"
+     onkeydown="handleNamekeydown();">
+
+    <button onclick="
+      submitName();
+     ">Submit</button>
+    <p class="js-message"></p>
+
+    <script>
+        function handleNamekeydown() {
+        if (event.key === 'Enter') {
+          submitName();
+        }
+      }
+
+      function submitName() {
+        const inputElement = document.querySelector('.js-name-input');
+        const messageElement = document.querySelector('.js-message');
+        messageElement.innerHTML = `Your name is: ${inputElement.value}`;
+      }
+    </script>
+  </body>
+</html>

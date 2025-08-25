@@ -1,0 +1,135 @@
+body{
+  background-color: white;
+}
+
+p{
+  color: black;
+}
+
+#container{
+  border: 2px solid;
+}
+
+#container  p{
+  background-color: yellow;
+}
+
+a:link{
+  color:hsl(221, 100%, 74%);
+ }
+
+
+a:hover{
+   color:hsl(221, 100%, 86%);
+   font-size: 1.1em;
+}
+
+a:active{
+   color:hsl(221, 100%, 58%);
+   font-size: 1.1em;
+}
+
+
+#greeting p{
+  background-color: blue;
+  padding: 10px;
+  display: none;
+}
+
+#greeting:hover p{
+  display: block;
+}
+
+h1::first-letter{
+  font-size: 2em;
+  font-style: italic;
+}
+
+p::first-line{
+  background-color: rgb(255, 255, 60);
+}
+
+p::selection{
+  color: green;
+  background-color: grey;
+}
+
+
+#apple::after{
+  content: "🍎";
+}
+
+#orange::after{
+  content: "🍊";
+}
+
+#banana::after{
+  content: "🍌";
+}
+
+#fruit li::marker{
+  content: "✔️";
+  color: green;
+  font-size: 1.2em;
+}
+
+
+.pagination{
+  text-align: center;
+}
+
+.pagination a{
+  color: black;
+  text-decoration: none;
+  padding: 8px 15px;
+  display: inline-block;
+}
+
+.pagination a.active{
+  background-color: rgb(221, 83, 221);
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active){
+  background-color: rgb(234, 222, 222);
+}
+
+.dropdown{
+  display: inline-block;
+}
+
+.dropdown button{
+  background-color:grey;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown a{
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+.dropdown .content{
+  display: none;
+  position: absolute;
+  background-color: ;
+  min-width: 100px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.dropdown:hover .content{
+  display: block;
+}
+
+.dropdown:hover button{
+  background-color: hsl(0, 0, 70%);
+}
+
+.dropdown a:hover{ 
+  background-color: hsl(0, 0, 0.1%);
+}
